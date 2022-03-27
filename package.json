@@ -1,6 +1,8 @@
 {
-  "name": "Infoviz_Cartoz",
-  "source": ["src/index.html"],
+  "name": "Infoviz_Cartoz-Setup",
+  "source": [
+    "src/index.ejs"
+  ],
   "targets": {
     "default": {
       "distDir": "./docs",
@@ -14,10 +16,13 @@
     "build": "parcel build"
   },
   "devDependencies": {
-   
-    "parcel": "^2.3.2"
+    "parcel": "^2.4.0",
+    "parcel-transformer-ejs": "^0.2.0"
   },
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "@popperjs/core": "^2.11.4",
+    "bootstrap": "^5.1.3",
+    "enter-view": "^2.0.1",
+    "lodash.debounce": "^4.0.8"
   }
 }

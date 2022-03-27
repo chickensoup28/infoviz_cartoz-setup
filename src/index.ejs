@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <script type="module" src="scripts/app.js"></script>
+  <title>My First Web App</title>
+</head>
+
+<body>
+  <main>
+    <article>
+      <section class="intro">
+        <div class="container">
+          <div class="row logo">
+            <div class="col-12"></div>
+          </div>
+          <div class="row title">
+            <div class="col-12">
+              <h2 class="display-4">15 views of Bokaro Thermal.</h2>
+            </div>
+          </div>
+          <div class="row bio">
+            <div class="col-12">
+            
+                Picturing the power plant- The power plant is the sole spot that defines the town you can see it from almost every where. What are these spots that you can picture (take a photo) the power plant from such that you have the essence of the town with you. the town is scenic beautiful and lush green in contrast to the power plant.
+              </p>
+            </div>
+      
+<section id="map-scrolly">
+
+  <!-- define the scroll sections -->
+  <% const blocks=
+    [
+      { 
+        "filename" : "map_1" , 
+        "anno" : "Creating the blind map" 
+      }, 
+      { 
+        "filename" : "map_2" , 
+        "anno": "Tracing google maps" 
+      }, 
+      { 
+        "filename" : "map_3" , 
+        "anno": "Finalizing major roads" 
+      }, 
+      { 
+        "filename" : "map_4" , 
+        "anno": "Final road layout" 
+      }, 
+      { 
+        "filename" : "map_5" , 
+        "anno": "Final map" 
+      }
+    ] 
+  %>
+
+  <!-- include the component -->
+  <%- include('./scrolly/scrolly.ejs', {id: "map-scrolly" , blocks: blocks }); %>
+</section>
+      
+    </article>
+  </main>
+</body>
+
+</html>

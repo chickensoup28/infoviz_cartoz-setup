@@ -1,4 +1,4 @@
-import enterViewScrolly from "../scrolly/scrolly"
+import enterViewScrolly from "../scrolly/enterViewscrolly"
 
 import * as bootstrap from 'bootstrap';
 console.log ("Random Message");
